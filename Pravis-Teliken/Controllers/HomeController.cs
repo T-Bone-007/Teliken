@@ -17,8 +17,15 @@ namespace Pravis_Teliken.Controllers
         {
             return View();
         }
-
-        public IActionResult Privacy()
+        public IActionResult Inlog()
+        {
+            return View();
+        }
+        public IActionResult Admin()
+        {
+            return View();
+        }
+        public IActionResult Agenda()
         {
             return View();
         }
