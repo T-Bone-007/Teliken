@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pravis_Teliken.Handler;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,11 @@ namespace Pravis_Teliken.Pages
         public HomePage()
         {
             InitializeComponent();
+        }
+
+        private void HomePage_Load(object sender, EventArgs e)
+        {
+            pbMain.Image = FileHandler.Instance.GetImage("Main.png");
         }
     }
 }
