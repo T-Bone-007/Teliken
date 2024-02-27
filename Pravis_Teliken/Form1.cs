@@ -22,14 +22,14 @@ namespace Pravis_Teliken
         private void Form1_Load(object sender, EventArgs e)
         {
             instance = this;
-            SwitchPageTo(new HomePage());
-            currentControl.Size = this.ClientSize;
+            SwitchPageTo(new HomePage());           
         }
         public void SwitchPageTo(UserControl page) 
         {
             this.Controls.Clear();
             this.Controls.Add(page);
             currentControl = page;
+            currentControl.Size = this.ClientSize;
         }
 
         private void Form1_Resize(object sender, EventArgs e)

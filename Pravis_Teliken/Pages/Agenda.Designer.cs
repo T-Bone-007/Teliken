@@ -28,20 +28,100 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.tlpMenuBarAgenda = new System.Windows.Forms.TableLayoutPanel();
+            this.lblAdmin = new System.Windows.Forms.Label();
+            this.lblAgenda = new System.Windows.Forms.Label();
+            this.lblInlog = new System.Windows.Forms.Label();
+            this.pbHomeLogo = new System.Windows.Forms.PictureBox();
+            this.tlpMenuBarAgenda.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbHomeLogo)).BeginInit();
             this.SuspendLayout();
+            // 
+            // tlpMenuBarAgenda
+            // 
+            this.tlpMenuBarAgenda.BackColor = System.Drawing.Color.SeaGreen;
+            this.tlpMenuBarAgenda.ColumnCount = 6;
+            this.tlpMenuBarAgenda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.71429F));
+            this.tlpMenuBarAgenda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.85714F));
+            this.tlpMenuBarAgenda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.85714F));
+            this.tlpMenuBarAgenda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.85714F));
+            this.tlpMenuBarAgenda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.85714F));
+            this.tlpMenuBarAgenda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.85714F));
+            this.tlpMenuBarAgenda.Controls.Add(this.lblAdmin, 3, 0);
+            this.tlpMenuBarAgenda.Controls.Add(this.lblAgenda, 4, 0);
+            this.tlpMenuBarAgenda.Controls.Add(this.lblInlog, 5, 0);
+            this.tlpMenuBarAgenda.Controls.Add(this.pbHomeLogo, 0, 0);
+            this.tlpMenuBarAgenda.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tlpMenuBarAgenda.Location = new System.Drawing.Point(0, 0);
+            this.tlpMenuBarAgenda.Name = "tlpMenuBarAgenda";
+            this.tlpMenuBarAgenda.RowCount = 1;
+            this.tlpMenuBarAgenda.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpMenuBarAgenda.Size = new System.Drawing.Size(482, 100);
+            this.tlpMenuBarAgenda.TabIndex = 1;
+            // 
+            // lblAdmin
+            // 
+            this.lblAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblAdmin.Location = new System.Drawing.Point(226, 0);
+            this.lblAdmin.Name = "lblAdmin";
+            this.lblAdmin.Size = new System.Drawing.Size(80, 100);
+            this.lblAdmin.TabIndex = 0;
+            this.lblAdmin.Text = "Admin";
+            this.lblAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblAgenda
+            // 
+            this.lblAgenda.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblAgenda.Location = new System.Drawing.Point(312, 0);
+            this.lblAgenda.Name = "lblAgenda";
+            this.lblAgenda.Size = new System.Drawing.Size(80, 100);
+            this.lblAgenda.TabIndex = 1;
+            this.lblAgenda.Text = "Agenda";
+            this.lblAgenda.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblInlog
+            // 
+            this.lblInlog.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblInlog.Location = new System.Drawing.Point(398, 0);
+            this.lblInlog.Name = "lblInlog";
+            this.lblInlog.Size = new System.Drawing.Size(81, 100);
+            this.lblInlog.TabIndex = 2;
+            this.lblInlog.Text = "Inlog";
+            this.lblInlog.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pbHomeLogo
+            // 
+            this.pbHomeLogo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbHomeLogo.Location = new System.Drawing.Point(3, 3);
+            this.pbHomeLogo.Name = "pbHomeLogo";
+            this.pbHomeLogo.Size = new System.Drawing.Size(45, 94);
+            this.pbHomeLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbHomeLogo.TabIndex = 3;
+            this.pbHomeLogo.TabStop = false;
+            this.pbHomeLogo.Click += new System.EventHandler(this.pbHomeLogo_Click);
             // 
             // Agenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.tlpMenuBarAgenda);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Agenda";
-            this.Size = new System.Drawing.Size(325, 288);
+            this.Size = new System.Drawing.Size(482, 432);
+            this.Load += new System.EventHandler(this.Agenda_Load);
+            this.tlpMenuBarAgenda.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbHomeLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.TableLayoutPanel tlpMenuBarAgenda;
+        private System.Windows.Forms.Label lblAdmin;
+        private System.Windows.Forms.Label lblAgenda;
+        private System.Windows.Forms.Label lblInlog;
+        private System.Windows.Forms.PictureBox pbHomeLogo;
     }
 }
