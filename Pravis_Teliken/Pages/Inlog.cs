@@ -16,5 +16,13 @@ namespace Pravis_Teliken.Pages
         {
             InitializeComponent();
         }
+
+        public static Inlog instance;
+        private void Inlog_Load(object sender, EventArgs e)
+        {
+            instance = this;
+            this.Controls.Add(new Menubar() { Dock = DockStyle.Top });
+        }
+       
     }
 }

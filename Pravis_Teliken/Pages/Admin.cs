@@ -16,5 +16,12 @@ namespace Pravis_Teliken.Pages
         {
             InitializeComponent();
         }
+
+        public static Admin instance;
+        private void Admin_Load(object sender, EventArgs e)
+        {
+            instance = this;
+            this.Controls.Add(new Menubar() { Dock = DockStyle.Top });
+        }
     }
 }

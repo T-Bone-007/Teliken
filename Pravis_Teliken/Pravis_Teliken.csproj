@@ -77,10 +77,19 @@
     <Compile Include="Pages\Inlog.Designer.cs">
       <DependentUpon>Inlog.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menubar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menubar.Designer.cs">
+      <DependentUpon>Menubar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menubar.resx">
+      <DependentUpon>Menubar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>

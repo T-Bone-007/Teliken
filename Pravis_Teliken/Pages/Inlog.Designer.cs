@@ -32,12 +32,13 @@
             // 
             // Inlog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Inlog";
-            this.Size = new System.Drawing.Size(325, 288);
+            this.Size = new System.Drawing.Size(817, 455);
+            this.Load += new System.EventHandler(this.Inlog_Load);
             this.ResumeLayout(false);
 
         }

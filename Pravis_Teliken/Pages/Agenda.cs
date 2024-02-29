@@ -18,14 +18,11 @@ namespace Pravis_Teliken.Pages
             InitializeComponent();
         }
 
+        public static Agenda instance;
         private void Agenda_Load(object sender, EventArgs e)
         {
-            pbHomeLogo.Image = FileHandler.Instance.GetImage("Logo.png");
-        }
-
-        private void pbHomeLogo_Click(object sender, EventArgs e)
-        {
-            Form1.instance.SwitchPageTo(new HomePage());
+            instance = this;
+            this.Controls.Add(new Menubar() { Dock = DockStyle.Top });
         }
     }
 }
