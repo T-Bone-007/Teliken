@@ -23,6 +23,10 @@ namespace Pravis_Teliken.Pages
             instance = this;
             this.Controls.Add(new Menubar() { Dock = DockStyle.Top });
         }
-       
+
+        private void btnInlog_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
