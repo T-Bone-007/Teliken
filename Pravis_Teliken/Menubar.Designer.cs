@@ -70,6 +70,7 @@
             this.lblAdmin.TabIndex = 0;
             this.lblAdmin.Text = "Admin";
             this.lblAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblAdmin.Visible = false;
             this.lblAdmin.Click += new System.EventHandler(this.lblAdmin_Click);
             // 
             // lblAgenda
@@ -90,7 +91,7 @@
             this.lblInlog.Name = "lblInlog";
             this.lblInlog.Size = new System.Drawing.Size(139, 116);
             this.lblInlog.TabIndex = 2;
-            this.lblInlog.Text = "Inlog";
+            this.lblInlog.Text = "Inloggen";
             this.lblInlog.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblInlog.Click += new System.EventHandler(this.lblInlog_Click);
             // 
@@ -117,7 +118,7 @@
             // 
             // Menubar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tlpHome);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
