@@ -19,6 +19,7 @@ namespace Pravis_Teliken
         }
         public static Form1 instance;
         UserControl currentControl;
+        UserControl messageControl;
         private void Form1_Load(object sender, EventArgs e)
         {
             instance = this;
@@ -35,6 +36,17 @@ namespace Pravis_Teliken
         private void Form1_Resize(object sender, EventArgs e)
         {
             currentControl.Size = this.ClientSize;
+        }
+        public void PutUpMessage(UserControl userControl) 
+        {
+            messageControl = userControl;
+            this.Controls.Add(userControl);
+            userControl.BringToFront();
+            userControl.Dock = DockStyle.Fill;
+        }
+        public void TakeDownMessage() 
+        {
+            this.Controls.Remove(messageControl);
         }
     }
 }
