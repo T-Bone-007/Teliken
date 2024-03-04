@@ -26,7 +26,10 @@ namespace Pravis_Teliken.Pages
             this.Controls.Add(new Menubar() { Dock = DockStyle.Top});
             pbHomeMain.Image = FileHandler.Instance.GetImage("Main.png");
         }
-
+        public void GetMenubar() 
+        {
+            this.Controls.Add(Menubar.instance);
+        }
 
     }
 }

@@ -30,14 +30,14 @@
         {
             this.btnInlog = new System.Windows.Forms.Button();
             this.pnlPass = new System.Windows.Forms.Panel();
-            this.tlpMainInlog = new System.Windows.Forms.TableLayoutPanel();
-            this.lblPass = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblPass = new System.Windows.Forms.Label();
             this.txtPass = new System.Windows.Forms.TextBox();
+            this.tlpMainInlog = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblNaam = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.pnlPass.SuspendLayout();
             this.tlpMainInlog.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -69,6 +69,38 @@
             this.pnlPass.Size = new System.Drawing.Size(266, 74);
             this.pnlPass.TabIndex = 2;
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.SeaGreen;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(266, 37);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Wachtwoord:";
+            // 
+            // lblPass
+            // 
+            this.lblPass.BackColor = System.Drawing.Color.SeaGreen;
+            this.lblPass.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPass.Location = new System.Drawing.Point(0, 0);
+            this.lblPass.Name = "lblPass";
+            this.lblPass.Size = new System.Drawing.Size(266, 37);
+            this.lblPass.TabIndex = 2;
+            this.lblPass.Text = "Wachtwoord:";
+            // 
+            // txtPass
+            // 
+            this.txtPass.BackColor = System.Drawing.Color.White;
+            this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPass.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.txtPass.ForeColor = System.Drawing.Color.Black;
+            this.txtPass.Location = new System.Drawing.Point(0, 37);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(266, 37);
+            this.txtPass.TabIndex = 1;
+            this.txtPass.UseSystemPasswordChar = true;
+            // 
             // tlpMainInlog
             // 
             this.tlpMainInlog.BackColor = System.Drawing.Color.White;
@@ -93,38 +125,6 @@
             this.tlpMainInlog.Size = new System.Drawing.Size(817, 455);
             this.tlpMainInlog.TabIndex = 1;
             // 
-            // lblPass
-            // 
-            this.lblPass.BackColor = System.Drawing.Color.SeaGreen;
-            this.lblPass.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblPass.Location = new System.Drawing.Point(0, 0);
-            this.lblPass.Name = "lblPass";
-            this.lblPass.Size = new System.Drawing.Size(266, 37);
-            this.lblPass.TabIndex = 2;
-            this.lblPass.Text = "Wachtwoord:";
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.SeaGreen;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(266, 37);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Wachtwoord:";
-            // 
-            // txtPass
-            // 
-            this.txtPass.BackColor = System.Drawing.Color.White;
-            this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPass.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtPass.ForeColor = System.Drawing.Color.Black;
-            this.txtPass.Location = new System.Drawing.Point(0, 37);
-            this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(266, 37);
-            this.txtPass.TabIndex = 1;
-            this.txtPass.UseSystemPasswordChar = true;
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.lblNaam);
@@ -146,17 +146,6 @@
             this.lblNaam.TabIndex = 18;
             this.lblNaam.Text = "Naam";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(275, 67);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(266, 80);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "Inloggen";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // txtName
             // 
             this.txtName.BackColor = System.Drawing.Color.White;
@@ -167,6 +156,17 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(266, 37);
             this.txtName.TabIndex = 17;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Location = new System.Drawing.Point(275, 67);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(266, 80);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Inloggen";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Inlog
             // 

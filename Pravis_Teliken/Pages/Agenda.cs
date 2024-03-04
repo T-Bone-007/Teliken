@@ -26,8 +26,8 @@ namespace Pravis_Teliken.Pages
         private void Agenda_Load(object sender, EventArgs e)
         {
             instance = this;
-            this.Controls.Add(new Menubar() { Dock = DockStyle.Top });
-            if (tlpAgenda == null)
+            this.Controls.Add(Menubar.instance);
+            if (tlpAgenda == null) 
             {
                 tlpAgenda = tlpAgendaGrid;
                 monthIndex = DateTime.Now.Month;

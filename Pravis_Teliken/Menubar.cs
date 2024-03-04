@@ -18,8 +18,10 @@ namespace Pravis_Teliken.Pages
             InitializeComponent();
         }
 
+        public static Menubar instance;
         private void Menubar_Load(object sender, EventArgs e)
         {
+            instance = this;
             pbHomeLogo.Image = FileHandler.Instance.GetImage("Logo.png");
         }
 
@@ -61,14 +63,33 @@ namespace Pravis_Teliken.Pages
 
         private void lblInlog_Click(object sender, EventArgs e)
         {
-            if (Inlog.instance == null)
+            if(lblInlog.Text == "Inloggen")
+            {
+                if (Inlog.instance == null)
+                {
+                    Form1.instance.SwitchPageTo(new Inlog());
+                }
+                else
+                {
+                    Form1.instance.SwitchPageTo(Inlog.instance);
+                }
+            } 
+            else 
             {
                 Form1.instance.SwitchPageTo(new Inlog());
+                lblInlog.Text = "Inloggen";
+                lblAdmin.Visible = false;
             }
-            else
-            {
-                Form1.instance.SwitchPageTo(Inlog.instance);
-            }
+        }
+
+        public void ChangelblName()
+        {
+            lblInlog.Text = "Uitloggen";
+        }
+
+        internal void showadmin()
+        {
+            lblAdmin.Visible = true;
         }
     }
 }
